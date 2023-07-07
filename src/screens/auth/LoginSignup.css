@@ -1,0 +1,105 @@
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftContent {
+    margin: unset;
+    padding: unset;
+}
+
+.leftContent img {
+    height: 100%;
+    width: 100%;
+}
+
+.rightContent {
+    background-color: rgb(255, 255, 255);
+    margin: unset;
+    padding: unset;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.rightContent .container {
+    text-align: center;
+    /* margin-top: 5%; */
+}
+
+.signupForm {
+    margin-top: 4%;
+}
+
+.signupForm form {
+    padding: 0 35px 0 35px;
+    max-width: 470px;
+    display: inline-block;
+}
+
+.signupForm form input {
+    border: 1px solid #CDCDCD;
+    border-radius: 10px;
+    height: 53px;
+    padding: 26px;
+    width: 100%;
+    margin: 6px 0 6px 0;
+    font-size: medium;
+}
+
+.signupForm form input:focus {
+    outline: 3px solid #CDCDCD;
+}
+
+.signupForm .icon {
+    right: 12px;
+    position: absolute;
+    bottom: -4px;
+    padding: 0 6px 0 6px;
+    font-size: 23px;
+}
+
+.signupForm button {
+    background-color: #80CCDC;
+    border-radius: 30px;
+    width: 100%;
+    height: 45px;
+    margin-top: 18px;
+    border: 0px;
+    font-size: 20px;
+}
+
+.signupForm .iconOptions {
+    margin: 40px 0 28px 0;
+}
+
+.iconOptions img {
+    height: 38px;
+    width: 40px;
+}
+
+.iconOptions div {
+    height: 40px;
+    border-radius: 27px;
+}
+
+.termsCondi {
+    font-size: 15px;
+}
+
+.termsCondi span:nth-child(2),
+.termsCondi span:nth-child(4) {
+    color: #DD8723;
+    font-weight: 400;
+}
+
+.AuthLink{
+    color: #DD8723; 
+    font-size: 17; 
+    font-weight: 500
+}
+
+.AuthLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

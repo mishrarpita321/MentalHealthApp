@@ -103,3 +103,8 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.heading {
+    font-size: 26px;
+    font-weight: 500;
+}

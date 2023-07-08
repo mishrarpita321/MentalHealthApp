@@ -1,18 +1,17 @@
-function Login({loginStyle}) {
+function Login({ loginStyle }) {
     return (
         <>
-            {/* <div className={loginStyle.signupForm}> */}
-            <div className="signupForm">
+            <div className={loginStyle.signupForm}>
                 <form>
                     <input type="email" placeholder="Email Address*" required="" />
                     <span style={{ position: "relative" }}>
-                        <span className="icon">
+                        <span className={loginStyle.icon}>
                             <i className="fa fa-eye" />
                         </span>
                         <input type="password" placeholder="Password*" required="" />
                     </span>
                     <button>Login</button>
-                    <div className="row iconOptions">
+                    <div className={`row ${loginStyle.iconOptions}`}>
                         <div
                             style={{ background: "#000000", marginRight: 6 }}
                             className="col"
@@ -32,7 +31,7 @@ function Login({loginStyle}) {
                             <img src="./images/google.png" />
                         </div>
                     </div>
-                    <span className="termsCondi">
+                    <span className={loginStyle.termsCondi}>
                         <span>By Continuting, you agree to MindMatter's </span>
                         <span>Terms &amp; Conditions </span>
                         <span>and </span>

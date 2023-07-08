@@ -30,7 +30,7 @@
 
 .chatbot-window {
     z-index: -1;
-    display: none;
+    display: block;
     position: absolute;
     bottom: 42px;
     right: 34px;
@@ -86,7 +86,7 @@
 
 .chatbot-window-message {
     z-index: -1;
-    display: none;
+    display: block;
     position: absolute;
     bottom: 42px;
     right: 34px;

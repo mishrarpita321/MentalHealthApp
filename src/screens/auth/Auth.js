@@ -2,6 +2,8 @@ import { useState } from "react"
 import Login from "../../components/Login/Login"
 import Signup from "../../components/Signup/Signup" 
 import styles from "../auth/LoginSignup.css"
+import ChatBotHome from "../../components/ChatBot/ChatBotHome"
+import ChatBot from "../../components/ChatBot/ChatBot"
 
 export function Auth() {
     const [authPage, setAuthPage] = useState('signin')
@@ -49,6 +51,7 @@ export function Auth() {
                     </div>
                 </div>
             </div>
+            <ChatBot/>
         </>
     )
 }

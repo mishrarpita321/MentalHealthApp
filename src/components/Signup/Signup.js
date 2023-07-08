@@ -3,14 +3,20 @@ function Signup({ signUpStyle }) {
         <>
             <div className={signUpStyle.signupForm}>
                 <form>
-                    <input type="text" placeholder="First Name*" required="" />
-                    <input type="text" placeholder="Last Name*" required="" />
-                    <input type="email" placeholder="Email Address*" required="" />
+                    <input type="text" placeholder="First Name*" required />
+                    <input type="text" placeholder="Last Name*" required />
+                    <input type="email" placeholder="Email Address*" required />
                     <span style={{ position: "relative" }}>
                         <span className={signUpStyle.icon}>
                             <i className="fa fa-eye" />
                         </span>
-                        <input type="password" placeholder="Password*" required="" />
+                        <input type="password" placeholder="Password*" required />
+                    </span>
+                    <span style={{ position: "relative" }}>
+                        <span className={signUpStyle.icon}>
+                            <i className="fa fa-eye" />
+                        </span>
+                        <input type="password" placeholder="Confirm Password*" required />
                     </span>
                     <button>Create Account</button>
                     <div className={`row ${signUpStyle.iconOptions}`}>

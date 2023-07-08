@@ -37,7 +37,7 @@ const Assessment = () => {
                         borderColor: '#EC4BDC'
                     },
                     {
-                        icon: './images/sleep2.png',
+                        icon: './images/sleep3.png',
                         ans: 'Sufficient Sleep',
                         borderColor: '#f2351bb3'
                     },
@@ -111,15 +111,15 @@ const Assessment = () => {
 
     const goToNextStep = () => {
         setSteps(steps + 1)
+        if (steps + 1 === questions.length) {
+            setSteps(100)
+        }
     }
 
 
     const displayQuestionPop = () => {
 
         let filteredQuestion = questions.find((question, index) => index === steps);
-        // console.log(steps)
-        // console.log(filteredQuestion)
-        // setTasks(filteredTasks);
 
         return (
             <>
@@ -130,9 +130,9 @@ const Assessment = () => {
                 </div>
                 <div className="row ans">
                     {
-                        filteredQuestion.ans.map((answer) => {
+                        filteredQuestion.ans.map((answer, index) => {
                             return (
-                                <div onClick={goToNextStep} className="col-12 test" style={{ borderColor: answer.borderColor }}>
+                                <div onClick={goToNextStep} className="col-12" style={{ borderColor: answer.borderColor }} key={index}>
                                     <span>
                                         <img src={answer.icon} />
                                     </span>
@@ -152,15 +152,19 @@ const Assessment = () => {
     }
 
     return (
-        <div style={{ transition: "right 0.3s ease-in-out" }} id="popup-overlay">
-            <div id="popup-window">
-                <div className="container qnsContai">
-                    {
-                        displayQuestionPop()
-                    }
+        <>
+            {steps != 100 && (
+                <div style={{ transition: "right 0.3s ease-in-out" }} id="popup-overlay">
+                    <div id="popup-window">
+                        <div className="container qnsContai">
+                            {
+                                displayQuestionPop()
+                            }
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            )}
+        </>
 
     )
 }

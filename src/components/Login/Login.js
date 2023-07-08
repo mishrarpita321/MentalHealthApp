@@ -3,12 +3,12 @@ function Login({ loginStyle }) {
         <>
             <div className={loginStyle.signupForm}>
                 <form>
-                    <input type="email" placeholder="Email Address*" required="" />
+                    <input type="email" placeholder="Email Address*" required />
                     <span style={{ position: "relative" }}>
                         <span className={loginStyle.icon}>
                             <i className="fa fa-eye" />
                         </span>
-                        <input type="password" placeholder="Password*" required="" />
+                        <input type="password" placeholder="Password*" required />
                     </span>
                     <button>Login</button>
                     <div className={`row ${loginStyle.iconOptions}`}>

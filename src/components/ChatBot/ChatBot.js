@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../ChatBot/ChatBot.css"
+import styles from "../ChatBot/ChatBot.module.css"
 import ChatBotHome from "./ChatBotHome";
 import ChatBotMsg from "./ChatBotMsg";
 const ChatBot = () => {
@@ -11,13 +11,15 @@ const ChatBot = () => {
     }
     return (
         <div>
-            <div className="chatbot-container">
-                <div className="chatbot-button" onClick={toggleChatbot}>
+            <div className={styles.chatbotContainer}>
+                <div className={styles.chatbotButton} onClick={toggleChatbot}>
                     <img src="images/mundi.png" />
                 </div>
                 {openChatbot ?
                     (openChatMsg ?
-                        <ChatBotMsg /> : <ChatBotHome openChatMsg={openChatMsg} setOpenChatMsg={setOpenChatMsg} />
+                        <ChatBotMsg botMsgStyle = {styles} /> 
+                        : 
+                        <ChatBotHome openChatMsg={openChatMsg} setOpenChatMsg={setOpenChatMsg} botHomeStyle = {styles}/>
                     ) : <></>
                 }
             </div>

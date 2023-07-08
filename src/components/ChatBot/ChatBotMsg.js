@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import styles from "../ChatBot/ChatBot.css"
-const ChatBotMsg = () => {
+const ChatBotMsg = ({ botMsgStyle }) => {
     const [msgText, setMsgText] = useState('')
     const handleInputChange = (event) => {
         setMsgText(event.target.value);
@@ -24,7 +24,6 @@ const ChatBotMsg = () => {
         ])
 
     const sendMessage = () => {
-        console.log('kljghhj')
         let msg = { response: msgText, from: "user" }
         // let messageToAdd = [...msgText, msg];
         setMessages([...msgText, msg]);
@@ -33,18 +32,18 @@ const ChatBotMsg = () => {
 
 
     return (
-        <div id="chatbot-window-message" className="chatbot-window-message">
-            <div className="row chatWindow">
+        <div className={botMsgStyle.chatbotWindowMessage}>
+            <div className={`row ${botMsgStyle.chatWindow}`}>
                 <div className="col-12">
                     <span>Your Buddy</span>
                     <hr />
-                    <div className="row" id="tag-container" >
+                    <div className={`row ${botMsgStyle.tagContainer}`} >
                         {tags.map((tag) => {
                             return (
                                 <div className="col-4" style={{ padding: '0px' }}>
-                                    <div className="tag">
-                                        <img className="tag-icon" src={tag.icon} />
-                                        <span className="tag-text">{tag.text}</span>
+                                    <div className={botMsgStyle.tag}>
+                                        <img className={botMsgStyle.tagIcon} src={tag.icon} />
+                                        <span className={botMsgStyle.tagText}>{tag.text}</span>
                                     </div>
                                 </div>
                             )
@@ -52,11 +51,11 @@ const ChatBotMsg = () => {
                     </div>
                 </div>
             </div>
-            <div className="chat-container">
-                <div className="chat-messages" id="chat-messages">
+            <div className={botMsgStyle.chatContainer}>
+                <div>
                     {messges.map((message) => {
                         return (
-                            <div class={`chat-message ${message.from == 'user' ? 'user' : 'bot'}`}>{message.response}</div>
+                            <div class={`${botMsgStyle.chatMessage} ${message.from == 'user' ? botMsgStyle.user : botMsgStyle.bot}`}>{message.response}</div>
                         )
                     })}
 
@@ -64,10 +63,10 @@ const ChatBotMsg = () => {
                     <div class="chat-message bot">Hi, Arpita !!</div> */}
                 </div>
             </div>
-            <div className="chat-input-container">
+            <div className={botMsgStyle.chatInputContainer}>
                 <input onChange={handleInputChange} value={msgText} type="text" id="chat-input" placeholder="Ask me anything..." />
                 <button onClick={sendMessage}>
-                    <img src="images/Send.png" className="button-image" />
+                    <img src="images/Send.png" className={botMsgStyle.buttonImage} />
                 </button>
             </div>
         </div>

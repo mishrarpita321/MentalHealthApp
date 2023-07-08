@@ -1,22 +1,21 @@
 import { useState } from "react";
-import styles from "../ChatBot/ChatBot.css"
-const ChatBotHome = ({ openChatMsg, setOpenChatMsg }) => {
+const ChatBotHome = ({ openChatMsg, setOpenChatMsg, botHomeStyle }) => {
     // const [openChatbot, setOpenChatbot] = useState(false);
     const toggleChatMsg = () => {
         setOpenChatMsg(!openChatMsg);
     }
     return (
-        <div id="chatbot-window" className="chatbot-window">
+        <div className= {botHomeStyle.chatbotWindow} >
             <div className="row">
                 <div className="col-12">
-                    <span className="yourBuddy">Your Buddy</span>
+                    <span className={botHomeStyle.yourBuddy}>Your Buddy</span>
                     <hr />
-                    <div className="logo">
-                        <img src="images/chatbot.png" style={{ height: 75, width: 75 }} />
+                    <div className={botHomeStyle.logo}>
+                        <img src="images/chatbot.png" className={botHomeStyle.botImg} />
                     </div>
-                    <div className="welcome">
+                    <div className={botHomeStyle.welcome}>
                         <div>
-                            <div style={{ marginBottom: "-13px" }}>
+                            <div className={botHomeStyle.welcomeTxt}>
                                 <span>Welcome</span>
                             </div>
                             <div>
@@ -24,10 +23,10 @@ const ChatBotHome = ({ openChatMsg, setOpenChatMsg }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="help">
+                    <div className={botHomeStyle.help}>
                         <span>How can I help you with?</span>
                     </div>
-                    <button onClick={toggleChatMsg} className="startChat">Start Chart</button>
+                    <button onClick={toggleChatMsg} className={botHomeStyle.startChat}>Start Chart</button>
                 </div>
             </div>
         </div>

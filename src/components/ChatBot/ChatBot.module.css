@@ -151,18 +151,13 @@
     display: inline-flex;
     align-items: center;
     width: 102px;
-    /* Set the width of the tags */
     margin-bottom: 10px;
-    /* Adjust the margin bottom as needed */
     justify-content: center;
-    /* Center the tag content horizontally */
 }
 
 .tagIcon {
     height: 29px;
-    /* Set the height of the icons */
     width: 44px;
-    /* Set the width of the icons */
     padding: 3px;
 }
 
@@ -170,7 +165,6 @@
     padding: 6px;
     font-size: small;
     text-align: left;
-    /* Align the text to the left within the tag */
 }
 
 /* Chat messages container */

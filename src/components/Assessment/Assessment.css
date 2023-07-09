@@ -27,20 +27,37 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .qnsContai .row {
   justify-content: center;
 }
 
+.qnsContai .qnsProgress {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .qnsContai .ques {
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .qnsContai .ans {
   width: 75%;
+}
+
+.imgClose {
+  height: 2rem;
+}
+
+.closeQns {
+  position: absolute;
+  top: -19px;
+  right: -7px;
+  cursor: pointer;
 }
 
 .qnsContai .ans .col-12 {

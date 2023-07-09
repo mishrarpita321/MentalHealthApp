@@ -116,6 +116,9 @@ const Assessment = () => {
         }
     }
 
+    const closePopup = () => {
+        setSteps(100);
+    }
 
     const displayQuestionPop = () => {
 
@@ -134,7 +137,7 @@ const Assessment = () => {
                             return (
                                 <div onClick={goToNextStep} className="col-12" style={{ borderColor: answer.borderColor }} key={index}>
                                     <span>
-                                        <img src={answer.icon} />
+                                        <img src={answer.icon}/>
                                     </span>
                                     {answer.ans}
                                 </div>
@@ -157,6 +160,13 @@ const Assessment = () => {
                 <div style={{ transition: "right 0.3s ease-in-out" }} id="popup-overlay">
                     <div id="popup-window">
                         <div className="container qnsContai">
+                        <span className='closeQns'>
+                            {/* <button>Close</button> */}
+                            <img src='./images/failed-icon.jpg' className='imgClose' onClick={closePopup}></img>
+                        </span>
+                            <div className='row qnsProgress'>
+                                <span>Qns {steps + 1} of {questions.length}</span>
+                            </div>
                             {
                                 displayQuestionPop()
                             }

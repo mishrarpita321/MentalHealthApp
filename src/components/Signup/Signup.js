@@ -1,17 +1,25 @@
-function Login({ loginStyle }) {
+function Signup({ signUpStyle }) {
     return (
         <>
-            <div className={loginStyle.signupForm}>
+            <div className={signUpStyle.signupForm}>
                 <form>
+                    <input type="text" placeholder="First Name*" required />
+                    <input type="text" placeholder="Last Name*" required />
                     <input type="email" placeholder="Email Address*" required />
                     <span style={{ position: "relative" }}>
-                        <span className={loginStyle.icon}>
+                        <span className={signUpStyle.icon}>
                             <i className="fa fa-eye" />
                         </span>
                         <input type="password" placeholder="Password*" required />
                     </span>
-                    <button>Login</button>
-                    <div className={`row ${loginStyle.iconOptions}`}>
+                    <span style={{ position: "relative" }}>
+                        <span className={signUpStyle.icon}>
+                            <i className="fa fa-eye" />
+                        </span>
+                        <input type="password" placeholder="Confirm Password*" required />
+                    </span>
+                    <button>Create Account</button>
+                    <div className={`row ${signUpStyle.iconOptions}`}>
                         <div
                             style={{ background: "#000000", marginRight: 6 }}
                             className="col"
@@ -31,7 +39,7 @@ function Login({ loginStyle }) {
                             <img src="./images/google.png" />
                         </div>
                     </div>
-                    <span className={loginStyle.termsCondi}>
+                    <span className={signUpStyle.termsCondi}>
                         <span>By Continuting, you agree to MindMatter's </span>
                         <span>Terms &amp; Conditions </span>
                         <span>and </span>
@@ -42,4 +50,4 @@ function Login({ loginStyle }) {
         </>
     )
 }
-export default Login
+export default Signup

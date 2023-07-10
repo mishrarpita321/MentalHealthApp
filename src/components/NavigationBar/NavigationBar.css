@@ -1,0 +1,23 @@
+.navigation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 4, 103);
+    position: fixed;
+    top: 0;
+    width: 100%;
+      z-index:9; 
+     
+
+  }
+
+  
+  @media (max-width:768px) {
+    nav{
+      margin-top: 0px;
+    }
+  .navigation-wrapper{
+    padding: 1rem 0px;
+  }
+  
+  }

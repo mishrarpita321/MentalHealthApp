@@ -1,4 +1,6 @@
-function Login({ loginStyle }) {
+
+const Login=({ loginStyle }) => {
+    
     return (
         <>
             <div className={loginStyle.signupForm}>

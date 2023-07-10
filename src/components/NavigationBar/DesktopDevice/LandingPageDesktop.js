@@ -12,19 +12,20 @@ import  Diary from '../../../assets/diary.png';
 import growth from '../../../assets/growth.png';
 import { Carousel } from 'react-responsive-carousel';
 import Meditate from '../../../assets/meditate.jpg';
-import ClosedOnes from '../../../assets/closeFriends.jpg';
 import Exercise from '../../../assets/Exercise.jpg';
-import Sleep from '../../../assets/Sleep.jpg';
 import Music from '../../../assets/music.jpg';
 import Paint from '../../../assets/Paint.jpg';
 import Eating from '../../../assets/eatHealthy.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Header from '../../Header/Header';
+import Footer from '../../Footer/Footer';
 
 
 
 const LandingPageDesktop=()=>{
     return(
         <div className='main-page'>
+            <Header/>
             <div className='picture'>
                 <img src={Background} alt='Image'/>
                 </div>
@@ -109,7 +110,7 @@ const LandingPageDesktop=()=>{
                     </div>
                 </Carousel> 
             </div>
-            
+            <Footer/>
             </div>
             
     )

@@ -165,7 +165,7 @@ const Assessment = () => {
                             <img src='./images/failed-icon.jpg' className='imgClose' onClick={closePopup}></img>
                         </span>
                             <div className='row qnsProgress'>
-                                <span>Qns {steps + 1} of {questions.length}</span>
+                                <span>Question {steps + 1} of {questions.length}</span>
                             </div>
                             {
                                 displayQuestionPop()

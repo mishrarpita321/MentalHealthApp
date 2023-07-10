@@ -80,7 +80,7 @@
 }
 
 .qnsContai .ans .col-12:hover {
- background: #cfd5db;
+  background: #cfd5db;
 }
 
 
@@ -101,9 +101,24 @@
 }
 
 .skipBtn button:hover {
-  background-color: #90d08b;;
+  background-color: #90d08b;
+  ;
 }
 
 .skipBtn button:focus {
   outline: none;
+}
+
+@media(max-width: 760px) {
+  .ans img {
+    display: none;
+  }
+
+  .qnsContai .ans .col-12 {
+    height: 50px;
+  }
+  #popup-window {
+    width: 340px;
+    height: 490px;
+  }
 }

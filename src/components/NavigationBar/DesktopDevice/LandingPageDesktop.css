@@ -1,0 +1,366 @@
+
+.content-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+}
+
+.content-main h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.slogan{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+}
+
+.slogan h1{
+    font-family: sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: #656a64; 
+}
+.slogan h2{
+    font-family: sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: rgb(79, 4, 103); 
+    text-decoration: underline; 
+}
+
+.slogan h3{
+    font-family: sans-serif;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #656a64;
+}
+
+
+.slogan p{
+    display: inline-flex;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+}
+.picture img{
+    width: 140vw;
+    height: 100vh; 
+}
+
+.menu-sections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.menu-sections p, a{
+   font-family: sans-serif;
+   color: #656a64;
+   font-weight: bold;
+}
+
+
+
+.Stress{
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #d1bde8;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Frustration{
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #d1bde8;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Depression{
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #d1bde8;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Anger{
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #d1bde8;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Stress img{
+    border-radius: 30px;
+    width: 18vw;
+    height: 33vh;
+    padding: 0;
+    margin-bottom:5px ;
+}
+.Stress a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Depression img{
+    border-radius: 30px;
+    width: 18vw;
+    height: 33vh;
+    padding: 0;
+    margin-bottom:5px ;
+}
+
+.Depression a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Frustration img{
+    border-radius: 30px;
+    width: 18vw;
+    height: 33vh;
+    padding: 0;
+    margin-bottom:5px ;
+}
+.Frustration a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Anger img{
+    border-radius: 30px;
+    width: 18vw;
+    height: 33vh;
+    padding: 0;
+    margin-bottom:5px ;
+}
+.Anger a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.features>div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features>div img{
+    width: 4vw;
+    height: 8vh;
+}
+
+.features>div h3{
+    font-family: sans-serif;
+    font-size: medium ;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+  #fullCarousel{
+    position:absolute;
+    width:100%;
+    top:0;
+  }
+  .carousel .slider img {
+    max-width: 30%; 
+  }
+  
+  .carousel .thumbs {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .carousel .thumbs .thumb {
+    width: 80px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel .thumbs .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  
+  .carousel .thumbs .thumb.active img {
+    border-color: #0a70dd;
+  }
+
+  .carousel p{ 
+    font-family: cursive;
+    justify-self: center;
+    font-size: large;
+    color: rgb(79, 4, 103);
+  }
+  
+  @media (max-width:768px) {
+    .picture{
+        overflow: hidden;
+    }
+    .picture img {
+        width: 150%;
+  }
+    .features{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .features>div img {
+        width: 18vw;
+        height: 10vh;
+    }
+    .menu-sections{
+        flex-direction: column;
+    }
+
+    .slogan{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .slogan h1{
+        font-family: sans-serif;
+        padding: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: rgb(79, 4, 103);  
+    }
+    .slogan h2{
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: rgb(79, 4, 103);  
+    }
+
+    .slogan p {
+        font-family: sans-serif;
+        margin-bottom: 0px;
+        padding: 10px;
+        margin-left: 55px;
+        margin-right: 20px;
+        color: black;
+    }
+    .menu-sections{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .menu-sections p, a{
+        font-family: sans-serif;
+        color: #656a64;
+        font-weight: bold;
+     }
+
+    .Stress{
+        width: 80vw;
+
+    }
+    .Stress img{
+        width: 70vw;
+    }
+
+    .Depression{
+        width: 80vw;
+    }
+    .Depression img{
+        width: 70vw;
+    }
+    .Anger{
+        width: 80vw;
+    }
+    .Anger img{
+        width: 70vw;
+    }
+    .Frustration{
+        width: 80vw;
+    }
+    .Frustration img{
+        width: 70vw;
+    }
+    .carousel .slider img {
+        max-width: 80%; 
+      }   
+    
+    
+
+}
+

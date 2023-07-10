@@ -1,0 +1,64 @@
+.mobile-menu-slider {
+  position: fixed;
+  display: block;
+  padding: 10px;
+  width: 220px;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 60px;
+  animation: slide-out 200ms ease-out backwards;
+}
+
+.mobile-navigation {
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column; 
+  align-items: first baseline;
+  gap: 1rem;
+  border-block: 1px solid rgb(5, 3, 3);
+}
+
+.mobile-menu-slider h2{
+    display: inline-flex;
+    padding: 10px;
+    color: rgb(4, 0, 0);
+    font-family: cursive;
+}
+
+/* .mobile-navigation li{
+    border-bottom: 1px solid rgb(5, 3, 3);
+} */
+
+
+.mobile-navigation a {
+  color: rgb(5, 0, 0);
+  font-family: cursive;
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.close-slider-btn {
+  border: none;
+  margin-bottom: 60px;
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.close-slider-btn svg {
+  fill: var(--Black);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

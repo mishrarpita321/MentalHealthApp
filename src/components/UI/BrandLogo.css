@@ -1,0 +1,27 @@
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+.logo img{
+    width: 20%;
+    height: 90%;
+  }
+
+.logo a{
+    display: inline-flex;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  
+  }
+
+
+
+ 

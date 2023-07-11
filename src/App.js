@@ -4,6 +4,7 @@ import { Auth } from './screens/auth/Auth';
 import LandingPageDesktop from './components/NavigationBar/DesktopDevice/LandingPageDesktop';
 import { Routes, Route, Link } from "react-router-dom";
 import Diary from './components/Diary/Diary';
+import AssessmentQns from './components/AssessmentQns/AssessmentQns';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<LandingPageDesktop />}/>
         <Route path="/login" element={<Auth/>}/>
         <Route path='/diary' element={<Diary/>}/>
+        <Route path='/assessment' element={<AssessmentQns/>}/>
       </Routes>
     </BrowserRouter>
     </div>

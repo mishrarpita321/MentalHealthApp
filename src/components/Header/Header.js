@@ -3,13 +3,13 @@ import "./Header.css";
 import NavigationBar from '../NavigationBar/NavigationBar';
 
 
-const Header=()=>{
-    return(
+const Header = ({ setShowAssessment = ()=>{} }) => {
+    return (
         <div className="header">
-        <NavigationBar />
+            <NavigationBar setShowAssessment={setShowAssessment} />
         </div>
     )
-    
+
 }
 
 export default Header;

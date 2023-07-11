@@ -4,6 +4,7 @@ import Signup from "../../components/Signup/Signup"
 import styles from "../auth/LoginSignup.module.css"
 import ChatBotHome from "../../components/ChatBot/ChatBotHome"
 import ChatBot from "../../components/ChatBot/ChatBot"
+import Header from "../../components/Header/Header"
 
 export function Auth() {
     const [authPage, setAuthPage] = useState('signin')

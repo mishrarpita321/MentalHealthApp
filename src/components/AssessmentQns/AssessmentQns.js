@@ -1,6 +1,11 @@
 import { useState } from 'react'
-import './Assessment.css'
-const Assessment = () => {
+import './AssessmentQns.css'
+import DesktopMenu from '../NavigationBar/DesktopDevice/DesktopMenu'
+import { Auth } from '../../screens/auth/Auth'
+import { useNavigate } from "react-router-dom";
+
+const AssessmentQns = ({setShowAssessment}) => {
+    let navigate = useNavigate();
     const [questions, setQuestions] = useState(
         [
             {
@@ -112,12 +117,13 @@ const Assessment = () => {
     const goToNextStep = () => {
         setSteps(steps + 1)
         if (steps + 1 === questions.length) {
-            setSteps(100)
+            // setShowAssessment(false);
+            navigate("/login");
         }
     }
 
     const closePopup = () => {
-        setSteps(100);
+        setShowAssessment(false);
     }
 
     const displayQuestionPop = () => {
@@ -156,14 +162,13 @@ const Assessment = () => {
 
     return (
         <>
-            {steps != 100 && (
+            {/* {steps != 100 && ( */}
                 <div style={{ transition: "right 0.3s ease-in-out" }} id="popup-overlay">
                     <div id="popup-window">
-                        <div className="container qnsContai">
                         <span className='closeQns'>
-                            {/* <button>Close</button> */}
                             <img src='./images/failed-icon.jpg' className='imgClose' onClick={closePopup}></img>
                         </span>
+                        <div className="container qnsContai">
                             <div className='row qnsProgress'>
                                 <span>Question {steps + 1} of {questions.length}</span>
                             </div>
@@ -173,9 +178,9 @@ const Assessment = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )}  */}
         </>
 
     )
 }
-export default Assessment
+export default AssessmentQns

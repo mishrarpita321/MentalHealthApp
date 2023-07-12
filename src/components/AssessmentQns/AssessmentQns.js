@@ -3,9 +3,8 @@ import './AssessmentQns.css'
 import DesktopMenu from '../NavigationBar/DesktopDevice/DesktopMenu'
 import { Auth } from '../../screens/auth/Auth'
 import { useNavigate } from "react-router-dom";
-import { Emoji} from "emoji-picker-react"
 
-const AssessmentQns = ({ setShowAssessment }) => {
+const AssessmentQns = () => {
     let navigate = useNavigate();
     const [questions, setQuestions] = useState(
         [
@@ -121,10 +120,12 @@ const AssessmentQns = ({ setShowAssessment }) => {
 
     const closePopup = () => {
         // setShowAssessment(false);
-        if (steps  === questions.length) {
-            setShowAssessment(false);
-            navigate("/login");
-        }
+        navigate("/login"); 
+
+        // if (steps  === questions.length) {
+        //     setShowAssessment(false);
+        //     navigate("/login");
+        // }
     }
 
     const displayQuestionPop = () => {
@@ -157,6 +158,8 @@ const AssessmentQns = ({ setShowAssessment }) => {
                                     <div onClick={goToNextStep} className="col-12" style={{ borderColor: answer.borderColor }} key={index}>
                                         <span>
                                             <img src={answer.icon} />
+                                            {/* <EmojiPicker /> */}
+                                            {/* <EmojiPeople emoji="grinning-face"/> */}
                                         </span>
                                         {answer.ans}
                                     </div>
@@ -176,7 +179,6 @@ const AssessmentQns = ({ setShowAssessment }) => {
 
     return (
         <>
-            {/* {steps != 100 && ( */}
             <div className="popup-overlay">
                 <div className="popup-window">
                     <span className='closeQns'>
@@ -189,7 +191,6 @@ const AssessmentQns = ({ setShowAssessment }) => {
                     </div>
                 </div>
             </div>
-            {/* )}  */}
         </>
 
     )

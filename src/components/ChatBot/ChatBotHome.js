@@ -9,7 +9,6 @@ const ChatBotHome = ({ openChatMsg, setOpenChatMsg, botHomeStyle }) => {
             <div className="row">
                 <div className="col-12">
                     <span className={botHomeStyle.yourBuddy}>Your Buddy</span>
-                    <hr />
                     <div className={botHomeStyle.logo}>
                         <img src="images/chatbot.png" className={botHomeStyle.botImg} />
                     </div>

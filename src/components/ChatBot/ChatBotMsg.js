@@ -1,10 +1,5 @@
 import { useState } from "react";
-// import styles from "../ChatBot/ChatBot.css"
 const ChatBotMsg = ({ botMsgStyle }) => {
-    const [msgText, setMsgText] = useState('')
-    // const handleInputChange = (event) => {
-    //     setMsgText(event.target.value);
-    // };
     const [tags] = useState(
         [
             { icon: "images/sleep.png", text: "Improve Sleep" },
@@ -12,7 +7,6 @@ const ChatBotMsg = ({ botMsgStyle }) => {
             { icon: "images/Goal2.png", text: "Improve Focus" },
             { icon: "images/Peace Pigeon2.png", text: "Peace" },
             { icon: "images/Sun2.png", text: "Other" }
-            // Add more tag objects as needed
         ])
 
     const [messges, setMessages] = useState(
@@ -20,12 +14,6 @@ const ChatBotMsg = ({ botMsgStyle }) => {
             { response: "Hi", from: "user" },
             { response: "hello, how are you doing today?", from: "bot" },
         ])
-
-    // const sendMessage = () => {
-    //     let msg = [{ response: msgText, from: "user" }]
-    //     setMessages([...messges, ...msg])
-    //     setMsgText('')
-    // }
 
 
     return (
@@ -55,14 +43,10 @@ const ChatBotMsg = ({ botMsgStyle }) => {
                             <div key={i} className={`${botMsgStyle.chatMessage} ${message.from == 'user' ? botMsgStyle.user : botMsgStyle.bot}`}>{message.response}</div>
                         )
                     })}
-
-                    {/* <div class="chat-message user">hi</div>
-                    <div class="chat-message bot">Hi, Arpita !!</div> */}
                 </div>
             </div>
             <div className={botMsgStyle.chatInputContainer}>
                 <input type="text" id="chat-input" placeholder="Ask me anything..." />
-                {/* <button onClick={sendMessage}> */}
                 <button>
                     <img src="images/Send.png" className={botMsgStyle.buttonImage} />
                 </button>

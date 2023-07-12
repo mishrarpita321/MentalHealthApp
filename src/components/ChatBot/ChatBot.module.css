@@ -28,7 +28,7 @@
     font-weight: 500;
 }
 
-.chatbotWindowMessage{
+.chatbotWindowMessage {
     z-index: -1;
     /* display: none; */
     position: absolute;
@@ -72,7 +72,7 @@
 
 .chatbotWindow .botImg {
     height: 75px;
-     width: 75px;
+    width: 75px;
 }
 
 .chatWindow .welcomeTxt {
@@ -137,9 +137,12 @@
     justify-content: center;
     margin-top: 5px;
     margin-right: -10px;
-    /* Adjust the margin right as needed */
     margin-left: -10px;
-    /* Adjust the margin left as needed */
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: floralwhite;
 }
 
 .tag {
@@ -251,14 +254,47 @@
     }
 
     .chatbotWindow {
-        width: 323px;
-        height: 458px;
+        width: 300px;
+        height: 404px;
     }
-}
 
-@media(max-width: 760px) {
     .chatbotWindowMessage {
-        width: 327px;
-        height: 458px;
+        width: 308px;
+        height: 420px;
+    }
+
+    .chatbotWindow .yourBuddy {
+        font-size: 27px;
+    }
+
+    .chatbotWindow .welcome {
+        font-size: 27px;
+    }
+
+    .tag {
+        width: 92%;
+        margin-bottom: 0;
+    }
+
+    .chatbotWindow.help {
+        font-size: 17px;
+        margin: 16px 0 36px 0;
+    }
+
+    .tagIcon {
+        display: none;
+    }
+
+    .tagText {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    .chatbotWindow .startChat {
+        min-height: 14%;
+    }
+
+    .chatMessage {
+        padding: 5px;
     }
 }

@@ -122,7 +122,7 @@ const LandingPageDesktop = () => {
                 </Carousel>
             </div>
             <ChatBot />
-            {showAssessment && <AssessmentQns setShowAssessment={setShowAssessment} />}
+            {showAssessment && <AssessmentQns />}
             <Footer />
         </div>
     )

@@ -4,7 +4,7 @@ import DesktopMenu from '../NavigationBar/DesktopDevice/DesktopMenu'
 import { Auth } from '../../screens/auth/Auth'
 import { useNavigate } from "react-router-dom";
 
-const AssessmentQns = ({setShowAssessment}) => {
+const AssessmentQns = () => {
     let navigate = useNavigate();
     const [questions, setQuestions] = useState(
         [
@@ -116,69 +116,81 @@ const AssessmentQns = ({setShowAssessment}) => {
 
     const goToNextStep = () => {
         setSteps(steps + 1)
-        if (steps + 1 === questions.length) {
-            // setShowAssessment(false);
-            navigate("/login");
-        }
     }
 
     const closePopup = () => {
-        setShowAssessment(false);
+        // setShowAssessment(false);
+        navigate("/login"); 
+
+        // if (steps  === questions.length) {
+        //     setShowAssessment(false);
+        //     navigate("/login");
+        // }
     }
 
     const displayQuestionPop = () => {
 
         let filteredQuestion = questions.find((question, index) => index === steps);
-
-        return (
-            <>
-                <div className="row ques">
-                    <span className="col-12">
-                        {filteredQuestion.qns}
-                    </span>
+        console.log("steps" +steps);
+        if (steps  === questions.length) {
+            return (
+                <div className='row qnsProgress'>
+                    <img src="./images/ThankYou.jpg" className='thankyouImg'/>
+                    <span>Thank You for your feedback!</span>
                 </div>
-                <div className="row ans">
-                    {
-                        filteredQuestion.ans.map((answer, index) => {
-                            return (
-                                <div onClick={goToNextStep} className="col-12" style={{ borderColor: answer.borderColor }} key={index}>
-                                    <span>
-                                        <img src={answer.icon}/>
-                                    </span>
-                                    {answer.ans}
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-                <div className="row skipBtn">
-                    <button onClick={goToNextStep} className="col-12">
-                        Skip
-                    </button>
-                </div>
-            </>
-        )
+            )
+        }
+        else {
+            return (
+                <>
+                    <div className='row qnsProgress'>
+                        <span>Question {steps + 1} of {questions.length}</span>
+                    </div>
+                    <div className="row ques">
+                        <span className="col-12">
+                            {filteredQuestion.qns}
+                        </span>
+                    </div>
+                    <div className="row ans">
+                        {
+                            filteredQuestion.ans.map((answer, index) => {
+                                return (
+                                    <div onClick={goToNextStep} className="col-12" style={{ borderColor: answer.borderColor }} key={index}>
+                                        <span>
+                                            <img src={answer.icon} />
+                                            {/* <EmojiPicker /> */}
+                                            {/* <EmojiPeople emoji="grinning-face"/> */}
+                                        </span>
+                                        {answer.ans}
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className="row skipBtn">
+                        <button onClick={goToNextStep} className="col-12">
+                            Skip
+                        </button>
+                    </div>
+                </>
+            )
+        }
     }
 
     return (
         <>
-            {/* {steps != 100 && ( */}
-                <div style={{ transition: "right 0.3s ease-in-out" }} id="popup-overlay">
-                    <div id="popup-window">
-                        <span className='closeQns'>
-                            <img src='./images/failed-icon.jpg' className='imgClose' onClick={closePopup}></img>
-                        </span>
-                        <div className="container qnsContai">
-                            <div className='row qnsProgress'>
-                                <span>Question {steps + 1} of {questions.length}</span>
-                            </div>
-                            {
-                                displayQuestionPop()
-                            }
-                        </div>
+            <div className="popup-overlay">
+                <div className="popup-window">
+                    <span className='closeQns'>
+                        <img src='./images/failed-icon.jpg' className='imgClose' onClick={closePopup}></img>
+                    </span>
+                    <div className="container qnsContai">
+                        {
+                            displayQuestionPop()
+                        }
                     </div>
                 </div>
-            {/* )}  */}
+            </div>
         </>
 
     )

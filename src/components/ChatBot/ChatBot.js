@@ -13,7 +13,7 @@ const ChatBot = () => {
         <div>
             <div className={styles.chatbotContainer}>
                 <div className={styles.chatbotButton} onClick={toggleChatbot}>
-                    <img src="images/mundi.png" />
+                    <img src="images/chatbotface.png" />
                 </div>
                 {openChatbot ?
                     (openChatMsg ?

@@ -50,7 +50,6 @@ export function Auth() {
                     </div>
                 </div>
             </div>
-            <ChatBot />
         </>
     )
 }

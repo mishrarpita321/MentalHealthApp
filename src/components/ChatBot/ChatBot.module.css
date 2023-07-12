@@ -137,9 +137,12 @@
     justify-content: center;
     margin-top: 5px;
     margin-right: -10px;
-    /* Adjust the margin right as needed */
     margin-left: -10px;
-    /* Adjust the margin left as needed */
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: floralwhite;
 }
 
 .tag {

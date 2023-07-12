@@ -1,4 +1,4 @@
-#popup-overlay {
+.popup-overlay {
   display: flex;
   position: fixed;
   top: 0;
@@ -12,7 +12,7 @@
   backdrop-filter: blur(6px);
 }
 
-#popup-window {
+.popup-window {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +109,11 @@
   outline: none;
 }
 
+.thankyouImg{
+  width: 50%;
+  height: 10%;
+}
+
 @media(max-width: 760px) {
   .ans img {
     display: none;
@@ -117,8 +122,8 @@
   .qnsContai .ans .col-12 {
     height: 50px;
   }
-  #popup-window {
-    width: 340px;
-    height: 490px;
+  .popup-window {
+    width: 320px;
+    height: 453px;
   }
 }

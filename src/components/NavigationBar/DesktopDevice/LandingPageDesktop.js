@@ -25,13 +25,6 @@ import AssessmentQns from '../../AssessmentQns/AssessmentQns';
 
 
 const LandingPageDesktop = () => {
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //       console.log('This will run after 1 second!')
-    //     }, 1000);
-    //     return () => clearTimeout(timer);
-    //   }, []);
-
     const [showAssessment, setShowAssessment] = useState(false)
 
     return (

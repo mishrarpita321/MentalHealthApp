@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 const Login=({ loginStyle }) => {
     
     return (
@@ -12,7 +12,9 @@ const Login=({ loginStyle }) => {
                         </span>
                         <input type="password" placeholder="Password*" required />
                     </span>
+                    <Link to='/userlogin'>
                     <button>Login</button>
+                    </Link>
                     <div className={`row ${loginStyle.iconOptions}`}>
                         <div
                             style={{ background: "#000000", marginRight: 6 }}

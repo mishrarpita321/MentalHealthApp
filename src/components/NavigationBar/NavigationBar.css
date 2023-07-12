@@ -6,8 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-      z-index:9; 
-     
+    z-index:9; 
 
   }
 
@@ -17,7 +16,8 @@
       margin-top: 0px;
     }
   .navigation-wrapper{
-    padding: 1rem 0px;
+    padding: 1.5rem 0px;
+    
   }
   
   }

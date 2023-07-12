@@ -21,7 +21,6 @@ const ChatBotMsg = ({ botMsgStyle }) => {
             <div className={`row ${botMsgStyle.chatWindow}`}>
                 <div className="col-12">
                     <span>Your Buddy</span>
-                    <hr />
                     <div className={`row ${botMsgStyle.tagContainer}`} >
                         {tags.map((tag,i) => {
                             return (

@@ -2,7 +2,7 @@
   position: fixed;
   display: block;
   padding: 10px;
-  width: 220px;
+  width: 250px;
   top: 0;
   right: 0;
   height: 100vh;
@@ -10,6 +10,13 @@
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 60px;
   animation: slide-out 200ms ease-out backwards;
+}
+
+.mobile-menu-slider .avatar{
+  margin-left: 80px;
+  width: 30%;
+  height: 10%;
+  
 }
 
 .mobile-navigation {
@@ -20,6 +27,11 @@
   gap: 1rem;
   border-block: 1px solid rgb(5, 3, 3);
 }
+ .mobile-navigation ul li{
+  display: flex;
+  justify-content: left;
+ }
+
 
 .mobile-menu-slider h2{
     display: inline-flex;
@@ -28,16 +40,13 @@
     font-family: cursive;
 }
 
-/* .mobile-navigation li{
-    border-bottom: 1px solid rgb(5, 3, 3);
-} */
-
 
 .mobile-navigation a {
   color: rgb(5, 0, 0);
   font-family: cursive;
   padding: 2px;
-  display: flex;
+  margin-left: 10px;
+  display: inline-flex;
   flex-wrap: wrap;
   
 }

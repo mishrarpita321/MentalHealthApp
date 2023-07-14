@@ -136,7 +136,7 @@ const AssessmentQns = () => {
             return (
                 <div className='row qnsProgress'>
                     <img src="./images/ThankYou.jpg" className='thankyouImg'/>
-                    <span>Thank You for your feedback!</span>
+                    <span>Thank You..Ready to start your journey with us</span>
                 </div>
             )
         }

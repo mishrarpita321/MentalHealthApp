@@ -20,8 +20,8 @@ const Diary=()=>{
             <div className='diary-row'>
                 <div className='diary-column'>
                 <div className='notes'>
-                <h1>Write down your thoughts</h1>
-                <h3>Select the date</h3>
+                <h2>Write down your thoughts</h2>
+                <p>Select the date:</p>
                 <DatePicker  width='50' selected={startDate} onChange={(date) => setStartDate(date)} />
                 <p>How are you feeling today, really?  Physically and mentally</p><input/>
                 <p> What’s taking up most of your headspace right now?</p><input/>
@@ -33,14 +33,14 @@ const Diary=()=>{
                 <p>What’s something you’re looking forward to in the next few days?</p><input/>
                 <p>What’s something we can do together this week, even if we’re apart?</p><input/>
                 <p> What are you grateful for right now?</p><input/>
+                <div className='btns'>
                 <div className='btn-2'>
                 <button> Reset</button>
+                </div>
+                <div className='btn-3'>
                 <button>Save</button>
                 </div>
-                <div>
-                
                 </div>
-                
                 </div>
                 <div className='emotion'>
                 <img src={emotion}/>
@@ -50,8 +50,8 @@ const Diary=()=>{
                 <div className='diary-column'>
                     <div className='calendar'>
                     <img src={calendar}/>
-                    <img src={routine}/>
                     <img src={progress}/>
+                    <img src={routine}/>
                     </div>
               
                 </div>

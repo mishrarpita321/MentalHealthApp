@@ -4,14 +4,10 @@
     margin-top: 100px;
     grid-template-columns: 1fr 1fr; /*Two equal-width columns;
     grid-gap: 10px; /* Gap between columns */
+    padding: 10px;
      width:100%; 
 }
-.diary-wrapper h1{
-  color: black;
-  margin-top: 127px;
-  margin-bottom: 0px;
 
-}
 
   .diary-column{
     display: flex;
@@ -27,16 +23,17 @@
   }
 
   .diary-column .calendar img{
-    width: 40vw;
+    width: 50vw;
     height: 60vh;
     border-radius: 10px;
   }
 
   .diary-column .emotion img {
-    width: 40vw;
-    height: 60vh;
+    width: 35vw;
+    height: 55vh;
     border-radius: 10px;
-    margin-left: 300px;
+    margin-top: 10px;
+    margin-left: 280px;
   }
 
   .diary-column .notes{
@@ -44,7 +41,7 @@
     flex-direction: column;
     background-size: 20vw;
     background-color:  #d1bde8;
-    width: 45vw;
+    width: 38vw;
     height: fit-content;
     flex-wrap: wrap;
     padding: 10px;
@@ -57,9 +54,18 @@
   .react-datepicker__navigation--previous {
     left: 2px;
 }
+.diary-column .notes h2{
+  color: rgb(41, 2, 71);
+  font-family: cursive;
+  font-weight: bold;
+}
 
+ .diary-column .notes input{
+  max-width: 560px;
+ }
   .diary-column .notes p{
-    color: rgb(20, 18, 18);
+    color: rgb(41, 2, 71);
+    font-family: sans-serif;
     font-weight: bold;
   }
   
@@ -68,31 +74,42 @@
     
   }
 
-  .diary-column .notes img{
-   margin-top: 50px;
-    
-  }
-    .diary-column img{
+  .diary-column img{
     margin-bottom: 20px;
   }
-  .diary-column .notes .btn-2{
-    display: inline-flex;
+
+
+  .diary-column .notes .btns{
+    display: flex;
     align-items: center;
     justify-content: right;
-    color: #ffffff;
-    white-space: nowrap;
   }
 
   .diary-column .notes .btn-2 button{
+  width: 150px;
    margin-left: 20px;
-   background-color: #4CAF50;
+   background-color: #F1E5E5;
    margin-top: 20px;
    border-color: black; 
-   color: white;
-   padding: 5px 20px;
+   color: rgb(0, 0, 0);
+   padding: 5px 0px;
    text-decoration: none;
+   border-radius: 5px;
    
   }
+
+  .diary-column .notes .btn-3 button{
+    width: 150px;
+     margin-left: 20px;
+     background-color: #4CAF50;
+     margin-top: 20px;
+     border-color: black; 
+     color: white;
+     padding: 5px 0px;
+     text-decoration: none;
+     border-radius: 5px;
+     
+    }
 
   @media (max-width:768px) {
     .diary-row{
@@ -100,6 +117,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .diary-column{
@@ -131,17 +150,27 @@
       flex-direction: column;
       background-size: 20vw;
       background-color: #d1bde8;
-      width: 89vw;
-      height: fit-content;
+      width: 92vw;
       padding: 10px;
       border-radius: 10px;
       margin-left: 0px;
       justify-content: flex-start;
       margin-bottom: 60px;
-    margin-top: 50px;
+      margin-top: 50px;
+      white-space: normal;
     }
 
+    .diary-column .notes input{
+      max-width: 400px;
+     }
 
+     .diary-column .notes .btn-2 button{
+      width: 120px;
+     } 
+
+     .diary-column .notes .btn-3 button{
+      width: 120px;
+     }
      
   
   }

@@ -1,10 +1,22 @@
+.headerbefore{
+  background-color: rgb(79, 4, 103); ;
+  width: 100%;
+}
+
 header {
     display: flex;
     background-color:rgb(79, 4, 103);
-    /* padding: 15px; */
     width: 90vw;
     max-width: 1160px;
     margin: 0 auto;
+    
+  }
+
+  .header {
+    display: flex;
+    background-color:rgb(79, 4, 103);
+    align-items: center;
+    justify-content:space-between;
   }
 
   nav{
@@ -43,7 +55,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right:50px;
     margin-left: 100px;
   }
 
@@ -54,12 +66,17 @@ header {
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
-    padding: 10px;
-    margin-top: 11px;
+  margin-top: 11px;
+  margin-right: 10px;
 }
-  /* Media query for responsive behavior */
-  @media (max-width: 768px) {
+ .userProfile .signout{
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+ }
 
+  @media (max-width: 768px) {
     header {
       flex-direction: column;
     }

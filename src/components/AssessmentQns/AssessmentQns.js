@@ -134,7 +134,9 @@ const AssessmentQns = () => {
             return (
                 <div className='row qnsProgress'>
                     <img src="./images/ThankYou.jpg" className='thankyouImg'/>
+
                     <span>For your answers, Lets begin the journey with us!</span>
+
                 </div>
             )
         }

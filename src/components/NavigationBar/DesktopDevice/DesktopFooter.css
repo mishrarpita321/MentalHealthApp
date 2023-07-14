@@ -40,6 +40,8 @@
   .footer--top p {
     margin: 0;
     white-space: nowrap;
+    font-family: cursive;
+
   }
   
   .contact {
@@ -55,9 +57,11 @@
   }
   .contact>p{
     color: rgb(245, 117, 77);
+    font-family: cursive;
   }
   .footer>p{
     text-align: center;
+    font-family: cursive;
   }
 
     

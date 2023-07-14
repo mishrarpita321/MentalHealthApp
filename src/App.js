@@ -3,9 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { Auth } from './screens/auth/Auth';
 import LandingPageDesktop from './components/NavigationBar/DesktopDevice/LandingPageDesktop';
 import LandingPage from './components/NavigationBar/DesktopDevice/LandingPage';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Diary from './components/Diary/Diary';
 import AssessmentQns from './components/AssessmentQns/AssessmentQns';
+
 
 function App() {
   return (

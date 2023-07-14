@@ -30,7 +30,7 @@ const MobileMenuSlider = (props) => {
         </li>
         <li>
         <Info/>
-        <Link>
+        <Link to=''>
         <a href="#">About Us</a>
         </Link>
         </li>

@@ -87,8 +87,8 @@ const AssessmentQns = () => {
                         borderColor: '#46AC81'
                     },
                     {
-                        icon: './images/eatfood.png',
-                        ans: 'No',
+                        icon: './images/eat.png',
+                        ans: 'No, change in appetite',
                         borderColor: '#f2351bb3'
                     },
                 ]
@@ -102,7 +102,7 @@ const AssessmentQns = () => {
                         borderColor: '#46AC81'
                     },
                     {
-                        icon: './images/Calm.png',
+                        icon: './images/CalmEmo.png',
                         ans: 'No, I remain calm',
                         borderColor: '#f2351bb3'
                     },
@@ -112,14 +112,12 @@ const AssessmentQns = () => {
     )
 
     const [steps, setSteps] = useState(0)
-    // const [responses, setResponses] = useState()
 
     const goToNextStep = () => {
         setSteps(steps + 1)
     }
 
     const closePopup = () => {
-        // setShowAssessment(false);
         navigate("/login"); 
 
         // if (steps  === questions.length) {
@@ -136,7 +134,9 @@ const AssessmentQns = () => {
             return (
                 <div className='row qnsProgress'>
                     <img src="./images/ThankYou.jpg" className='thankyouImg'/>
-                    <span>Thank You..Ready to start your journey with us</span>
+
+                    <span>For your answers, Lets begin the journey with us!</span>
+
                 </div>
             )
         }

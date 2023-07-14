@@ -1,0 +1,23 @@
+.picture-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+   
+}
+.picture-1 img{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .picture-1{
+        overflow: hidden;
+    }
+    .picture-1 img{
+        width: 150%;
+
+    }
+ 
+
+}

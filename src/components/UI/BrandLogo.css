@@ -1,0 +1,35 @@
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+
+}
+.logo img{
+    width: 10%;
+    height: 30%;
+    margin-right:10px ;
+  }
+
+.logo a{
+    display: inline-flex;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  
+  }
+
+  @media (max-width: 768px) {
+    .logo{
+      padding: 10px;
+    }
+  }
+
+
+
+ 

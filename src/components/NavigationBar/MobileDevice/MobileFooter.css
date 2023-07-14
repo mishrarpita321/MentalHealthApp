@@ -1,0 +1,71 @@
+.mobfooter {
+    background-color:rgb(79, 4, 103);  
+    height: fit-content;
+    color: white;
+  }
+  
+  .mobsocial-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  hr {
+    width: 45%;
+    margin: 0;
+    height: 0px;
+  }
+  
+  .mobsocial-media>div {
+    display: flex;
+    gap: 10px;
+    /* color: rgb(228, 94, 53); */
+  }
+  
+  .mobTnC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5%;
+  }
+  
+  .mobfooter--top {
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: center;
+  }
+  .mobfooter--top p {
+    margin: 0;
+    white-space: normal;
+    font-family: cursive;
+  }
+  
+  .mobcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .mobcontact>h4{
+    color: rgb(215, 11, 11);
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobcontact>p{
+    color: rgb(250, 247, 247);
+    font-family: cursive;
+    margin: 0;
+    padding:0;
+  }
+  .mobfooter>p{
+    text-align: center;
+    font-family: cursive;
+  }
